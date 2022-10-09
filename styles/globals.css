@@ -6,6 +6,18 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+body {
+  --font-karla: font-family: 'Karla', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --black: #222222;
+  --red: #C24868;
+  --aqua: #9ECFC5;
+  --cream: #f8f8f2;
+
+  position: relative;
+  background-color: var(--cream);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -13,6 +25,27 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+footer {
+  padding: 30px 30px 40px;
+  background-color: var(--black);
+  font: normal normal normal 14px/16px Montserrat;
+  color: white;
+  text-align: center;
+}
+
+footer img {
+  margin-bottom: 25px;
+}
+
+footer > div > span {
+  text-decoration: underline;
+}
+
+footer > div > span:first-of-type::after {
+  content: "|";
+  margin: 0 4px;
 }
 
 @media (prefers-color-scheme: dark) {

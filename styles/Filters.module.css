@@ -1,0 +1,96 @@
+.filterCont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectCont {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #222222;
+    z-index: 100;
+    font-family: "Karla";
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.selectCont select {
+    font-family: inherit;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.selectCont select * {
+    background-color: #222222;
+}
+
+.selectCont button {
+    font-family: inherit;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    padding: 8px;
+}
+
+.filterCont button {
+    font-family: inherit;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+}
+
+.filterCont button svg {
+    margin-left: 8px;
+}
+
+@media (min-width: 1025px) {
+    .filterCont button:last-of-type {
+        display: none;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    .selectCont {
+        position: relative;
+        flex-direction: row;
+        top: unset;
+        left: unset;
+        padding: 0;
+        margin-left: 15px;
+        height: 100%;
+    }
+
+    .selectCont select {
+        margin: 0 15px 0 0;
+        border: 1px solid white;
+        padding: 3px 12px;
+        border-radius: 3px;
+    }
+}

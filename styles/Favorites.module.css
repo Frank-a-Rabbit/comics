@@ -1,0 +1,77 @@
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.favoritesCont {
+    background-color: #222222;
+    padding-top: 20px;
+}
+
+.favoritesCont ul li > div {
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    margin-bottom: 40px;
+    overflow: visible;
+    box-shadow: none;
+}
+
+.favoritesCont ul li > div > div:last-child {
+    padding-left: 10px;
+}
+
+.favoritesCont ul li > div button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255,255,255,0.75);
+    z-index: 1;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    color: #C24868;
+    font-weight: bold;
+}
+
+.close {
+    padding: 10px;
+    background-color:#C24868;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    width: 100%;
+}
+
+.close svg {
+    margin-left: 8px;
+}
+
+@media (min-width: 1025px) {
+    .hide {
+        display: block;
+        grid-column: 3 / 4;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .favoritesCont ul li > div button {
+        width: 15px;
+        height: 15px;
+        font-size: 11px;
+    }
+}
